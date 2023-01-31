@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange-color: hsl(25, 97%, 53%);
+    --white-color: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --darklight-blue: hsl(212, 14%, 21%);
+    --dark-blue: hsl(214, 16%, 17%);
+    --darkest-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--darkest-blue);
+}
+
+button {
+    font-family: inherit;
+    display: block;
+}
+
+h1 {
+    color: var(--white-color);
+}
+
+p {
+    color: var(--light-grey);
+    font-size: 0.9375rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.rating-card, .thank-card {
+    background: var(--dark-blue);
+    padding: 1.75rem;
+    border-radius: 1.5rem;
+    max-width: 25rem;
+}
+
+.rating-card img {
+    background: var(--darklight-blue);
+    padding: 0.75rem;
+    border-radius: 50%;
+}
+
+.header {
+    margin: 1.75rem 0 0.875rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.btn {
+    width: 3rem;
+    height: 3rem;
+    background: var(--darklight-blue);
+    border: none;
+    border-radius: 50%;
+    color: var(--light-grey);
+    transition: all 0.5s;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    color: var(--white-color);
+    background-color: var(--orange-color);
+}
+
+.error {
+    color:maroon;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn:focus {
+    color: var(--white-color);
+    background-color: var(--medium-grey);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.5rem;
+    background: var(--orange-color);
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+.btn-submit:hover {
+    background-color: var(--white-color);
+    color: var(--orange-color);
+}
+
+.thank-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thank-card img {
+    display: block;
+}
+
+.rating-line {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: var(--darklight-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: var(--orange-color);
+}
+
+.hidden {
+    display: none;
+}
