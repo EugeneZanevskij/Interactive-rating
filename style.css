@@ -46,6 +46,7 @@ main {
     padding: 1.75rem;
     border-radius: 1.5rem;
     max-width: 25rem;
+    width: 90vw;
 }
 
 .rating-card img {
